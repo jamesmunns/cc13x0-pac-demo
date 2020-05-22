@@ -18,58 +18,6 @@
    <access>read-write</access>
    <resetMask>0xFFFFFFFF</resetMask>
    <peripherals>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    <peripheral>
          <name>AON_BATMON</name>
          <description>Always On (AON) Battery And Temperature MONitor (BATMON) residing in the AON domain  Note: This module only supports 32 bit Read/Write access from MCU.  </description>
@@ -1090,7 +1038,7 @@ This register is used to monitor various power management related signals in AON
 </description>
                <addressOffset>20</addressOffset>
                <access>read-write</access>
-               <resetValue>0xe00000000</resetValue>
+               <resetValue>0xe0000000</resetValue>
                <fields>
                   <field>
                      <name>AUX_PWR_DWN</name>
@@ -4837,7 +4785,7 @@ The settings in this register are OR'ed with the corresponding settings in MODCL
                <description>CCFG Size and Disable Flags</description>
                <addressOffset>4016</addressOffset>
                <access>read-only</access>
-               <resetValue>0x10000ffff</resetValue>
+               <resetValue>0xFFFFFFFF</resetValue>
                <fields>
                   <field>
                      <name>SIZE_OF_CCFG</name>
@@ -9157,7 +9105,7 @@ DMA_DONE for the corresponding DMA channel is available as interrupt on GPT1 as 
             </register>
             <register>
                <name>FLASH_NUMBER</name>
-               <description></description>
+               <description>lol</description>
                <addressOffset>356</addressOffset>
                <access>read-only</access>
                <resetValue>0x00000000</resetValue>
@@ -9171,7 +9119,7 @@ DMA_DONE for the corresponding DMA channel is available as interrupt on GPT1 as 
             </register>
             <register>
                <name>FLASH_COORDINATE</name>
-               <description></description>
+               <description>lol2</description>
                <addressOffset>364</addressOffset>
                <access>read-only</access>
                <resetValue>0x00000000</resetValue>
@@ -9916,7 +9864,7 @@ Reading this register or the USER_ID register is the only support way of identif
                <description>IO Configuration</description>
                <addressOffset>836</addressOffset>
                <access>read-only</access>
-               <resetValue>0x7fffff8000</resetValue>
+               <resetValue>0x1FFFFFE0</resetValue>
                <fields>
                   <field>
                      <name>GPIO_CNT</name>
@@ -10118,7 +10066,7 @@ Reading this register or the USER_ID register is the only support way of identif
                <description>Internal. Only to be used through TI provided API.</description>
                <addressOffset>876</addressOffset>
                <access>read-only</access>
-               <resetValue>0x3fffffc080</resetValue>
+               <resetValue>0x00000000</resetValue>
                <fields>
                   <field>
                      <name>SOC_ADC_REF_VOLTAGE_TRIM_TEMP1</name>
@@ -20871,7 +20819,7 @@ Minimum Value of STMPXPER</description>
                <description>Configuration of DIO17</description>
                <addressOffset>68</addressOffset>
                <access>read-write</access>
-               <resetValue>0x8000006000</resetValue>
+               <resetValue>0x00000000</resetValue>
                <fields>
                   <field>
                      <name>HYST_EN</name>
