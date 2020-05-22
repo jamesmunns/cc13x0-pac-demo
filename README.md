@@ -52,3 +52,20 @@ Next steps:
 
 GET THE DEBUGGER RUNNING
 
+## Using the PAC interfaces
+
+Useful for reading, writing, and modifying registers
+
+VOCAB FOR PACs
+
+* READ: Means **read** from the register
+    * Interact with the register ONCE
+* MODIFY: Means **read**, make **changes**, then **write**
+    * Interact with the register TWICE
+* WRITE: Means **take the default value**, make **changes**, then **write**
+    * Interact with the register ONCE
+
+Important Notes:
+
+* Not all registers have all interfaces
+* Always start with the `Peripherals` struct from your PAC
