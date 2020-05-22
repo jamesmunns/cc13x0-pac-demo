@@ -1,0 +1,11 @@
+[build]
+target = "thumbv7m-none-eabi"
+
+[target.thumbv7m-none-eabi]
+# Useful for `cargo run` automation (optional)
+runner = "arm-none-eabi-gdb -tui -q -x debug.gdb"
+
+# REQUIRED - sets the linker script
+rustflags = [
+    "-C", "link-arg=-Tlink.x",
+]

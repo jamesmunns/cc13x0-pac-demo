@@ -31,4 +31,3 @@ PROVIDE(PROG0 = DefaultHandler);
 PROVIDE(AUX_COMPA = DefaultHandler);
 PROVIDE(AUX_ADC_IRQ = DefaultHandler);
 PROVIDE(TRNG_IRQ = DefaultHandler);
-
